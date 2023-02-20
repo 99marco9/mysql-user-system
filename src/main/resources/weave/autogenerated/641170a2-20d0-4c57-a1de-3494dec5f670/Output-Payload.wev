@@ -1,0 +1,11 @@
+%dw 2.0
+
+type auto_641170a2_20d0_4c57_a1de_3494dec5f670_Output_Payload = {
+  mail: String, 
+  "id?"?: Number, 
+  cognome: String | Null, 
+  indirizzo: String, 
+  nome: String, 
+  _?: Any
+}
+

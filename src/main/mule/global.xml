@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="03901f7c-52d6-407b-a6a0-05077312d92b" file="mysql-user-system-dev.properties" />
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="108fa53b-0685-4f69-8709-00812eff7be6" >
+		<db:my-sql-connection host="${mysql-user-system-host}" port="${mysql-user-system-port}" user="${mysql-user-system-user}" password="${mysql-user-system-password}" database="${mysql-user-system-database}">
+			<db:connection-properties >
+				<db:connection-property key="useSSL" value="false" />
+			</db:connection-properties>
+		</db:my-sql-connection>
+		
+	</db:config>
+</mule>
